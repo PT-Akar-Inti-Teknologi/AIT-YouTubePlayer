@@ -5,10 +5,10 @@ let name = "YouTubePlayer"
 let package = Package(
     name: name,
     products: [
-        .library(name: "Swift-YouTube-Player", targets: ["Swift-YouTube-Player"])
+        .library(name: name, targets: [name])
     ],
     targets: [
-        .target(name: "Swift-YouTube-Player", path: "Swift-YouTube-Player"),
+        .target(name: name, path: name),
     ],
     swiftLanguageVersions: [.v5]
 )
