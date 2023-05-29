@@ -1,7 +1,7 @@
 // swift-tools-version:5.0
 
 import PackageDescription
-let name = "YouTubePlayerr"
+let name = "YouTubePlayer"
 let package = Package(
     name: name,
     products: [
