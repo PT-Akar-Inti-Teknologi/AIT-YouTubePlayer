@@ -1,14 +1,14 @@
 // swift-tools-version:5.0
 
 import PackageDescription
-let name = "YouTubePlayer"
+
 let package = Package(
-    name: name,
+    name: "YouTubePlayer",
     products: [
-        .library(name: name, targets: [name])
+        .library(name: "YouTubePlayer", targets: ["YouTubePlayer"])
     ],
     targets: [
-        .target(name: name, path: name),
+        .target(name: "YouTubePlayer", path: "YouTubePlayer"),
     ],
     swiftLanguageVersions: [.v5]
 )
