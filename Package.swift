@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "YouTubePlayer", targets: ["YouTubePlayer"])
     ],
     targets: [
-        .target(name: "YouTubePlayer", path: "YouTubePlayer"),
+        .target(name: "YouTubePlayer", path: "YouTubePlayer/YouTubePlayer"),
     ],
     swiftLanguageVersions: [.v5]
 )
