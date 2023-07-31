@@ -87,6 +87,7 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
 
     public typealias YouTubePlayerParameters = [String: AnyObject]
     public var baseURL = "about:blank"
+    public var bundle: Bundle?
 
     fileprivate var webView: WKWebView!
 
@@ -252,7 +253,7 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
     }
 
     fileprivate func playerHTMLPath() -> String {
-        return Bundle(for: YouTubePlayerView.self).path(forResource: "YTPlayer", ofType: "html")!
+        return bundle?.path(forResource: "YTPlayer", ofType: "html") ?? ""
     }
 
     fileprivate func htmlStringWithFilePath(_ path: String) -> String? {
